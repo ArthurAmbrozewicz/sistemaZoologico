@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  body {
+    display: flex;
+    background-color: #fafafa;
+  }
+  aside {
+    width: 100px; 
+    background-color: #fff;
+    height: 100vh;
+    padding: 1rem 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  aside nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  aside nav a {
+    padding: 5px;
+    
+    text-decoration: none;
+    color: #333;
+    font-size: 1.0rem;
+  }
+  
+  aside nav a:hover {
+    color: #2e86de;
+  }
+  
+  
+  main {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+  }
+  h1 {
+    text-align: center;
+  
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 2rem;
+  }
+  h4{
+    color:grey;
+  }
+  main {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* agora organiza verticalmente */
+    align-items: center;    /* centraliza horizontalmente */
+  }
+  
+  
+  .btn-add {
+    margin-top: 1rem;
+    padding: 0.4rem 1rem;
+    background-color: #3d869c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  .btn-add i {
+    font-size: 1.4rem;
+  }
+
+  .form-animal {
+    justify-content: center;
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+  }
+  
+  .form-animal h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-animal input,
+  .form-animal textarea {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    resize: none;
+    background-color: #fff;
+  }
+  
+  .form-footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .criar-btn {
+    background-color: #2e86de;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    cursor: pointer;
+    justify-content: center;
+
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  .form-row input {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+  }
+  .select-cuidado {
+
+    margin-bottom: 1rem;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: white;
+    color: #b9b6b6;
+    appearance: none;
+    height: 40px;
+  }
+  .tarefa-alta {
+    background-color: white;
+    border-color:rgb(90, 89, 89)0;
+    border: 1px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 6px solid;
+    border-radius: 6px;
+  }

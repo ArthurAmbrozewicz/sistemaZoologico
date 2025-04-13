@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Animais</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/cuidados.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<div id="popup" style="display: none;" class="popup">
+  <div class="popup-conteudo">
+    <span id="fechar-popup" class="fechar-popup">&times;</span>
+    <h3>Detalhes do Animal</h3>
+    <p id="popup-texto"></p>
+  </div>
+</div>
+
+<body>
+  <aside>
+    <nav>
+      <a href="../html/cadastrar_animais.html">Cadastrar Animais</a>
+      <a href="../html/cadastrar cuidado.html">Cadastrar Cuidado</a>
+      <a href="../html/gerenciar_animais.html">Gerenciar Animais</a>
+      <a href="../html/gerenciar_cuidados.html">Gerenciar Cuidados</a>
+      <a href=""></a>
+    </nav>
+  </aside>
+
+  <main>
+    <h1>Registro de Cuidados</h1>
+    <p>Filtre por:</p>
+    <div class="filtros">
+        <select id="filtro-frequencia">
+            <option value="" disabled selected>Frequência</option>
+        </select>
+
+        <select id="filtro-tipo">
+            <option value="" disabled selected>Tipo de cuidado</option>
+        </select>
+    </div>
+      
+      <div id="lista-cuidados"></div>
+      
+
+    </div>
+    <div class="popup" id="popup-editar" style="display: none;">
+        <div class="popup-conteudo">
+
+            
+            <h3>Editar Cuidado</h3>
+            <form id="form-editar">
+                <input type="hidden" id="editar-id">
+                <label>Tipo do cuidado:</label>
+                <input type="text" id="editar-tipo" required>
+                <label>Frequência:</label>
+                <input type="text" id="editar-frequencia" required> <br>
+                <label >Descrição:</label>
+                <input type="text" id="editar-descricao"> <br>
+                <button type="submit">Salvar</button>
+                <span class="fechar-popup" id="btn-fechar-editar">×</span>
+          </form>
+        </div>
+      </div>
+      <div id="popup-descricao" class="popup" style="display:none;">
+        <div class="popup-conteudo">
+            <button onclick="fecharPopupDescricao()">X</button>
+          <p id="descricao-texto"></p>
+        </div>
+      </div>
+      
+  </main>
+<script src="../js/listar_cuidados.js"></script>
+</body>
+</html>
